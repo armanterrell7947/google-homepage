@@ -145,6 +145,8 @@ header h4 {
 
 
 
+
+
 /* ----------START SEARCH BAR----------- */
 .searchbar-container {
     width: 40%;
@@ -152,7 +154,7 @@ header h4 {
 }
 
 .text-input-searchbar {
-    height: 24px; 
+    height: 30px;
     width: 90%;
     outline-width: 0;
     border-radius: 40px;
@@ -173,8 +175,14 @@ header h4 {
 
 }
 
+
+
 .google-shopping-link {
     color: blue;
+}
+
+.text-input-searchbar:hover {
+    box-shadow: -1px -2px 15px rgb(187, 187, 187);
 }
 
 .google-shopping-link:hover {
