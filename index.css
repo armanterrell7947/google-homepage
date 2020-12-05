@@ -1,0 +1,16 @@
+.searchbar-buttons {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.searchbar-container {
+    height: auto;
+}
+
+.google-button {
+    align-items: center;
+    padding: 7.5px 8px;
+    
+
+}

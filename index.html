@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<!-- Everything here is where the start of the NavBar begins. I will be attempting to 
+set the items of the NavBar as a flex container and span them across either side
+. Yeehaw friends, here we go!-->
+
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <head>
+        <header>
+          <nav class="navbar">
+            <div class="left-nav">
+                <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
+                <h4 class="nav-text">About</h4></a>
+                <a class="nav-link" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+                <h4 class="nav-text">Store</h4></a>
+            </div>
+            <div class="right-nav">
+                <a class="nav-link" href="https://mail.google.com/mail/?tab=wm&ogbl">
+                <h4 class="nav-text">Gmail</h4></a>
+                <a class="nav-link" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">
+                <h4 class="nav-text">Images</h4></a>
+                <a class="nav-link" href="https://mail.google.com/mail/?tab=wm&ogbl">
+                <img class="nav-link" id="nav-app-logo" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="google apps logo"></h4></a>
+                <a class="nav-link-a" href="https://mail.google.com/mail/?tab=wm&ogbl">
+                <h4 class="nav-text" id="a-logo">A</h4></a>
+            </div>
+          </nav>
+        </header>
+      </head>
+</head>
+
+<body class="main-content">
+    <div class="google-main-content main-page"> 
+        <!-- right here sets up the most top Google image along with a linked image to the side to take us
+        to social media-->
+        <div class="top-google-image" id="google-image">
+            <a href="https://www.duckduckgo.com" alt="Take you to a real search engine"><img 
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google main page image"></a>
+                <a href="https://www.simplyconvivial.com/2020/why-i-quit-instagram/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAoklEQVR42mMwTvvPQAZ2AOKZQPwAimdCxeBqyDX0DBD/R8NnkA0nx+CZWAyF4ZmUGPwAj8EPBp3BzkB8mdSgwBfTMkC8EsmAW8RGHq6YPgu14DOUD6IrgNiF2OSGL6ZheDUQyxEbbMREyCcgdiU1kkmKaXIMxhcUlylxMa7Iu0VpGONKbqDYL6ckVRDCZKdjmua84VkI0bQ8plkNQrM6jygMAODsqWK79M8/AAAAAElFTkSuQmCC"
+                alt="social media icon">
+            </a>
+        </div>
+        <div class="searchbar-container">
+            <!-- I extended the form to include the second div "searchbar-buttons" because I wanted both the heart button
+            and the google search button to link to the same inputted search-->
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" placeholder="" name="q" class="text-input-searchbar">
+                <button type="submit" class="btn google-button" value="search"> &#9829;</button>
+            
+        </div>
+        <div class="searchbar-buttons" >
+            
+                <button type="submit" class="google-search-button google-button" value="search">Google Search</button>
+            </form>
+            <!--Since this button has a completely different function than to its brother, I am creating a new form
+            so that this will link to a random website. I am not integrating any random selection from a javascript array
+            for this is purely HTML/CSS for now, making it easy. I will however animate the button with some CSS-->
+            <form action="https://theuselessweb.com/" alt="Taking you elsewhere random"></a>
+                <button type="submit" class="google-lucky-button google-button" value="search">I'm feeling lucky!</button>
+            </form>
+        </div>
+        <!--right here begins the ending section of the main content page, linking to a gift shopping guide.-->
+        <div class="google-holiday-guide">
+            <p class="holiday-guide-text">
+                Explore the <a href="https://www.google.com/url?q=https://shopping.google.com/m/shopping-100/%3Futm_source%3Ddigital%26utm_medium%3DHPP%26utm_campaign%3DGSD_middle_desktop&source=hpp&id=19021996&ct=3&usg=AFQjCNEIh4Vtt4uPRjcTo0VE1-BFhnKb5w&sa=X&ved=0ahUKEwi13Pz3-rLtAhXIFzQIHXdVBMcQ8IcBCBI">
+                <span class="google-shopping-link">Google Shopping Gift Guide</span></a> to find holiday shopping inspiration!
+            </p>
+        </div>
+    </div>
+<footer>
+    <div class="left-footer">
+    <p class="footer-link left-footer"><a class="footer-hyperlink" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></p>
+    <p class="footer-link left-footer"><a class="footer-hyperlink" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></p>
+    <p class="footer-link left-footer"><a class="footer-hyperlink" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></p>
+    </div>
+    <div class="middle-footer">
+    <p class="footer-link middle-footer"><img class="footer-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+        <a class="footer-hyperlink" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a></p>
+    </div>
+        <div class="right-footer">
+        <p class="footer-link right-footer"><a class="footer-hyperlink" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></p>
+    <p class="footer-link right-footer"><a class="footer-hyperlink" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></p>
+    <p class="footer-link right-footer"><a class="footer-hyperlink" href="https://www.google.com/preferences?hl=en">Settings</a></p>
+    </div>
+</footer>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
