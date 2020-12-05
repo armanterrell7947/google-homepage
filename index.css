@@ -1,16 +1,274 @@
+
+/*settin up some main attributes really quickly before proceeding to the rest of the navbar*/
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 16px;
+    font-family: arial, sans-serif;
+  }
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    display: flex;
+    flex-direction: flex-end;
+    vertical-align: bottom;
+
+}
+
+
+
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Going to start adding some functionality to the hover property for the links considering the app logo
+darkens and the other nav links create an underline underneath */
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* here though I want different properties to hover over the app logo and the 'A' logo*/
+
+#nav-app-logo:hover {
+    -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));             
+    filter: drop-shadow(1px 1px  1px rgba(0, 0, 0, 0.5));
+
+}
+
+#a-logo:hover {
+    color: black;
+    text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+/* ----------START NAVBAR----------- */
+
+/*on to the navbar and aligning things, I'm going to attempt to float left the left class nav links
+and float right the other four links on the right side, we'll see where we go from there.*/
+
+header {
+
+    padding: 0;
+}
+
+
+header h4 {
+    font-size: 0.90rem;
+    font-weight: normal;
+}
+.navbar {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+
+}
+.nav-link {
+    display: flex;
+    padding: 10px 10px;
+    
+}
+.right-nav {
+    align-items: center;
+    display: flex;
+    height: auto;
+    padding-right: 20px;
+
+}
+.left-nav {
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+#nav-app-logo {
+    margin: 0;
+    padding: 0;
+}
+
+#a-logo{
+    align-items: center;
+    height: 0.9em;
+    width: 0.9em;
+    background: #1cb0b8;
+    border: 9px solid #1cb0b8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+/* ----------END NAVBAR----------- */
+
+/* ----------START GOOGLE-MAIN-CONTENT (TOP IMAGES)----------- */
+
+
+
+.main-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 50px auto;
+
+    
+}
+
+.top-google-image, .searchbar-container, .searchbar-buttons, .google-holiday-guide{
+    margin: 15px 20px;
+}
+
+
+
+
+/* ----------START SEARCH BAR----------- */
+.searchbar-container {
+    width: 40%;
+    height: auto;
+}
+
+.text-input-searchbar {
+    height: 24px; 
+    width: 90%;
+    outline-width: 0;
+    border-radius: 40px;
+}
+
 .searchbar-buttons {
     display: flex;
     justify-content: center;
     height: auto;
 }
 
-.searchbar-container {
-    height: auto;
-}
 
 .google-button {
     align-items: center;
-    padding: 7.5px 8px;
+    padding: 4px 10px;
+    height: auto;
     
 
 }
+
+.google-shopping-link {
+    color: blue;
+}
+
+.google-shopping-link:hover {
+    text-decoration: underline;
+}
+
+/* ----------END SEARCH BAR----------- */
+
+/* ----------START SEARCH BUTTON/FEELING LUCKY BUTTON----------- */
+
+.google-search-button, .google-lucky-button {
+    position: relative;
+    display: inline-block;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    min-width: 54px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(0,0,0,0.01);
+}
+
+.google-lucky-button:hover, .google-search-button:hover {
+    box-shadow: 0.5px 0.5px 0.5px 1px rgba(0, 0, 0, 0.3)
+
+}
+
+
+
+
+
+/* ----------END SEARCH BUTTON/FEELING LUCKY BUTTON----------- */
+
+
+/* ----------START FOOTER----------- */
+footer a {
+    color: rgb(156, 156, 156);
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    width: 100vw;
+    align-content: flex-start;
+    flex-wrap: none;
+    border-top: 1px solid rgb(221, 221, 221);
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px 0px 0 0;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+}
+
+
+
+.footer-link {
+    align-items: center;
+    margin: auto 10px auto 10px;
+    justify-self: space-between;
+    width: auto;
+    text-align: center;
+
+}
+
+.left-footer, .right-footer {
+    display: inline;
+    width: 33.33%;
+}
+
+
+.middle-footer {
+    width: auto;
+    align-items: center;
+}
+
+.left-footer {
+    text-align: left;
+
+}
+.right-footer {
+    text-align: right;
+}
+
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+
+
+/* ----------END FOOTER----------- */
