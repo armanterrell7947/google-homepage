@@ -110,6 +110,8 @@ header h4 {
 }
 
 #a-logo{
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 0.9em;
     width: 0.9em;
@@ -118,8 +120,11 @@ header h4 {
     border-radius: 50%;
     font-size: 1.5rem;
     color: white;
-
 }
+
+
+
+
 
 
 /* ----------END NAVBAR----------- */
